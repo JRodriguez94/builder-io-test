@@ -1,1 +1,9 @@
-<p>landing-page works!</p>
+<builder-component
+  *ngIf="!noBuilderPageForUrl"
+  model="page"
+  (load)="noBuilderPageForUrl = $event ? false : true"
+  (error)="noBuilderPageForUrl = true"
+>
+  <!-- Default content inside the tag shows while the builder content is fetching -->
+  <div class="spinner"></div>
+</builder-component>
