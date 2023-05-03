@@ -9,7 +9,6 @@ import { RouterModule } from '@angular/router';
 import { CbComponentComponent } from './custom-builder-components/cb-component/cb-component.component';
 import { HttpClientModule } from '@angular/common/http';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
         component: LandingPageComponent, // <-- add LandingPageComponent here
       },
     ]),
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
